@@ -36,6 +36,18 @@ Let us set up our Mysql database inside settings.py under DATABASES
         'PORT':'3306'
     }
 
+MIGRATION
+---------
+After the database creation you have to make the migration so that all the created models should create the tables in the database automatically
+
+Execute the following commands:
+
+1. python manage.py makemigrations
+2. python manage.py migrate
+
+
+
+
 
 
 
