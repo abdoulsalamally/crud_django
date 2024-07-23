@@ -1,32 +1,33 @@
-We suppose you have already installed python and django from the official sites.
 
-CREATE A PROJECT IN DJANGO
+Nous supposons que vous avez déjà installé Python et Django depuis les sites officiels.
+
+CRÉER UN PROJET À DJANGO
 --------------------------
 django-admin startproject projectname
 
-CREATE AN APP
+CRÉER UNE APPLICATION
 -------------
 python manage.py startapp appname
 
-RUN SERVER
+EXÉCUTER LE SERVEUR
 ----------
 python manage.py runserver
 
 
-After creating an app you have to include it in the main app folder inside settings.py in 
+Après avoir créé une application, vous devez l'inclure dans le dossier principal de l'application dans settings.py dans 
 INSTALLED_APPS = [
-    'myapp'
+    'monapplication'
 ]
 
-Don't forget to also include 'rest_framework' to be able to visualize your endpoints in rest framework
+N'oubliez pas d'inclure également 'rest_framework' pour pouvoir visualiser vos points de terminaison dans le framework rest
 INSTALLED_APPS = [
     'rest_framework'
 ]
 
 
-DATABASE
---------
-Let us set up our Mysql database inside settings.py under DATABASES
+BASE DE DONNÉES
+---------
+Configurons notre base de données Mysql dans settings.py sous DATABASES
  'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'crud_django',
@@ -38,9 +39,9 @@ Let us set up our Mysql database inside settings.py under DATABASES
 
 MIGRATION
 ---------
-After the database creation you have to make the migration so that all the created models should create the tables in the database automatically
+Après la création de la base de données, vous devez effectuer la migration afin que tous les modèles créés créent automatiquement les tables dans la base de données.
 
-Execute the following commands:
+Exécutez les commandes suivantes :
 
 1. python manage.py makemigrations
 2. python manage.py migrate
