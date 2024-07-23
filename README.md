@@ -19,7 +19,9 @@ INSTALLED_APPS = [
 ]
 
 Don't forget to also include 'rest_framework' to be able to visualize your endpoints in rest framework
-
+INSTALLED_APPS = [
+    'rest_framework'
+]
 
 
 DATABASE
@@ -33,5 +35,7 @@ Let us set up our Mysql database inside settings.py under DATABASES
         'HOST':'localhost',
         'PORT':'3306'
     }
+
+
 
 
