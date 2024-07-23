@@ -13,4 +13,5 @@ RUN SERVER
 python manage.py runserver
 
 
-
+After creating an app you have to include it in the main app folder inside settings.py in 
+INSTALLED APPS
