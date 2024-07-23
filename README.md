@@ -1,7 +1,7 @@
 
 Nous supposons que vous avez déjà installé Python et Django depuis les sites officiels.
 
-CRÉER UN PROJET À DJANGO
+CRÉER UN PROJET EN DJANGO
 --------------------------
 django-admin startproject projectname
 
